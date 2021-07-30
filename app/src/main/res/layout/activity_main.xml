@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.85"
+        android:background="#551947">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            style="@style/textFormat"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/ivBack"
+            android:text="Fly to Seoul" />
+
+        <ImageView
+            android:id="@+id/ivPerson"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ivBack"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            style="@style/textFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/ivPerson"
+            android:text="1 Adult, Economy"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ivPerson"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            style="@style/textFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/ivLocation"
+            android:text="Seoul, Korea"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ivLocation"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/ivAirplane"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_airplanemode_active_24" />
+
+        <TextView
+            style="@style/textFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/ivLocation"
+            android:text="Choose Destination"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ivAirplane"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/line3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_date_range_24" />
+
+        <TextView
+            style="@style/textFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/ivLocation"
+            android:text="Select Dates"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/Line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ivCalendar"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.15"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvExplore"
+            style="@style/textFormat"
+            android:layout_margin="10dp"
+            android:text="Explore flights by destinations"
+            android:textColor="#C2C2C2"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ivKhumbu"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/tvExplore"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/khumbu_valley" />
+
+        <TextView
+            android:id="@+id/tvKhumbu"
+            style="@style/textFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExplore"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/ivKhumbu"
+            android:text="Khumbu Valley, Nepal"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NonStop - 5h 16m+"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvKhumbu"
+            android:layout_toRightOf="@+id/ivKhumbu"/>
+
+        <View
+            android:id="@+id/Line5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ivKhumbu"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:background="#C2C2C2" />
+
+        <ImageView
+            android:id="@+id/ivMaldives"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/Line5"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/maldives_pic" />
+
+        <TextView
+            android:id="@+id/tvMaldives"
+            style="@style/textFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Line5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/ivMaldives"
+            android:text="Maldives, South Asia"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" NonStop - 8h 24m+"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/tvMaldives"
+            android:layout_toEndOf="@+id/ivMaldives"/>
+
+    </RelativeLayout>
+</LinearLayout>
